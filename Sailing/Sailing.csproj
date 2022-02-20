@@ -11,7 +11,7 @@
         <AssemblyName>Sailing</AssemblyName>
         <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
-        <LangVersion>10</LangVersion>
+        <LangVersion>9</LangVersion>
         <Nullable>enable</Nullable>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     </PropertyGroup>
@@ -48,6 +48,7 @@
                 <GamePath Condition="!Exists('$(GamePath)') AND '$(_SteamLibraryPath)' != ''">$(_SteamLibraryPath)\steamapps\common\Valheim</GamePath>
                 <GamePath Condition="!Exists('$(GamePath)')">C:\Program Files\Steam\steamapps\common\Valheim</GamePath>
                 <GamePath Condition="!Exists('$(GamePath)')">C:\Program Files (x86)\Steam\steamapps\common\Valheim</GamePath>
+                <GamePath Condition="!Exists('$(GamePath)')">D:\Games\SteamLibrary\steamapps\common\Valheim</GamePath>
             </PropertyGroup>
         </When>
     </Choose>
